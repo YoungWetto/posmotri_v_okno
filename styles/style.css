@@ -86,7 +86,7 @@ ol {
   display: grid;
   grid-template: 1fr / 2fr 1fr;
   grid-auto-flow: row;
-  margin: 133px 30px ;
+  margin: 270px 30px ;
   gap: 30px;
   height: 534px;
 }
@@ -164,7 +164,7 @@ ol {
 .search-form__textfield::placeholder {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
-  color: #fff;
+  color: #fff / 0.5;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
