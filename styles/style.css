@@ -78,18 +78,19 @@ ol {
   background-color: #1b1919;
   display: grid;
   grid-template: 1fr / 1fr;
-  justify-content: center;
+  align-items: center;
   justify-items: center;
 }
 
 /* Разметка блока Content */
 .content {
   max-height: 537px;
+  max-width: 1140;
   display: grid;
   grid-template: 1fr / 2fr 1fr;
   grid-auto-flow: row;
-  margin: 270px 30px;
-  gap: 30px;
+  margin: 133px 30px;
+  gap: 27px;
 }
 
 /* Разметка блока Result */
@@ -121,8 +122,8 @@ ol {
   grid-template: 1fr / 1fr 1fr 1fr;
   grid-auto-flow: row;
   align-items: end;
-  justify-items: start;
-  gap: 40px;
+  justify-items: end;
+  gap: 38px;
 }
 
 .search-form__fieldset {
@@ -141,8 +142,10 @@ ol {
   font-size: 18px;
   font-weight: 400;
   padding-bottom: 5px;
+  padding-left: 5px;
   line-height: normal;
 }
+
 
 /* Стили для поля ввода Search form*/
 .search-form__textfield {
@@ -200,8 +203,9 @@ ol {
   display: grid;
   grid-template: 1fr / 1fr 1fr 1fr;
   grid-auto-flow: row;
-  gap: 16px;
+  gap: 15px;
   padding-bottom: 6px;
+  padding-left: 5px;
 }
 
 .search-form__checkbox-list .search-form__label {
@@ -232,7 +236,7 @@ ol {
 .search-form__submit-button {
   min-width: 194px;
   min-height: 34px;
-  margin: 0 0 3px 1px;
+  margin: 0 0 1px 1px;
 }
 
 /* Стили для блока Content details*/
@@ -251,6 +255,7 @@ ol {
   text-transform: uppercase;
   line-height: 71px;
   padding-top: 2px;
+  padding-left: 3px;
 }
 
 .content__accent {
@@ -276,7 +281,7 @@ ol {
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
-  min-width: 200px;
+  max-width: 200px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -292,14 +297,14 @@ ol {
 
 .content__video-card-thumbnail {
   min-width: 194px;
-  min-height: 103px;
+  max-height: 103px;
   object-fit: cover;
   object-position: center;
 }
 
 .content__list-item {
   padding: 0 0 30px 0;
-  min-width: 399px;
+  min-width: 398px;
 }
 
 .content__card-link {
@@ -313,7 +318,6 @@ ol {
 .more-button {
   min-width: 399px;
   min-height: 34px;
-  margin: 4px;
 }
 
 .content__card-link_current {
